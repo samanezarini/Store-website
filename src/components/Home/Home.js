@@ -3,6 +3,7 @@ import { IoIosArrowDown, IoIosSearch, IoMdHeartEmpty, IoMdCart } from "react-ico
 import { LuShoppingCart, LuSearch, LuHeart } from "react-icons/lu";
 import './home.css'
 import Logo from '../../img/logo.png'
+import HeroSection from "./Hero";
 function Home() {
 
 
@@ -74,7 +75,10 @@ function Home() {
                 </Container>
             </header >
             
-            
+            <section>
+                <HeroSection></HeroSection>
+            </section>
+
         </>
     );
 }
