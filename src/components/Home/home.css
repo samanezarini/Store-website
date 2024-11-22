@@ -4,8 +4,6 @@
 }
 
 .usd-hover span{
-    color: #ffffff;
-    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
@@ -29,3 +27,9 @@
     -o-transition: all, 0.3s;
     transition: all, 0.3s;
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
