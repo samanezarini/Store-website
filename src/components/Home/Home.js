@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { IoIosArrowDown, IoIosSearch, IoMdHeartEmpty, IoMdCart } from "react-icons/io";
 import { LuShoppingCart, LuSearch, LuHeart } from "react-icons/lu";
-import './home.css'
-import Logo from '../../img/logo.png'
-import HeroSection from "./Hero";
+import "./home.css";
+import Logo from "../../img/logo.png";
+import HeroSection from "./Slide";
 function Home() {
 
 
