@@ -28,12 +28,13 @@
     transition: all, 0.3s;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
   }
 
-a{
+nav ul li{
     cursor: pointer;
+    text-decoration: none;
 }

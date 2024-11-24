@@ -1,10 +1,14 @@
+import Nav from "../home/Nav";
+function Blog() {
 
-function Blog(){
+    return (
+        <>
+            <Nav />
+            <h1>
+                Blog page
+            </h1>
+        </>
 
-    return(
-        <h1>
-            Blog page
-        </h1>
     )
 }
 export default Blog;

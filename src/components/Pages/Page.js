@@ -1,10 +1,15 @@
+import Nav from "../home/Nav";
 
-function Pages(){
+function Pages() {
 
-    return(
-        <h1>
-            Pages page
-        </h1>
+    return (
+        <>
+            <Nav />
+            <h1>
+                Pages page
+            </h1>
+        </>
+
     )
 }
 export default Pages;

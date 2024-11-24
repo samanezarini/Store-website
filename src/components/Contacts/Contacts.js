@@ -1,10 +1,14 @@
+import Nav from "../home/Nav";
 
-function Contacts(){
+function Contacts() {
 
-    return(
-        <h1>
-            Contacts page
-        </h1>
+    return (
+        <>
+            <Nav />
+            <h1>
+                Contacts page
+            </h1>
+        </>
     )
 }
 export default Contacts;
