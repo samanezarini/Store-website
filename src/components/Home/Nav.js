@@ -2,9 +2,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import { IoIosArrowDown } from "react-icons/io";
 import { LuShoppingCart, LuSearch, LuHeart } from "react-icons/lu";
 import Logo from "../../img/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import './nav.css'
 
 function Nav(){
+
+    const location = useLocation();
+    const isActive = (path) => location.pathname === path;
 
     return(
         <>
@@ -47,25 +51,23 @@ function Nav(){
                             <a href=""><img src={Logo} alt="logo" style={{ width: "190px", height: "23px" }} /></a>
                         </div>
                     </Col>
-                    <Col lg={6} md={6} className="">
-                        <nav className="text-align-center pt-4 pb-4 mx-5" style={{ width: "100%" }}>
+                    <Col lg={6} md={6} className="navbarr">
+                        <nav className="d-flex justify-content-center text-align-center pt-4 pb-4 " style={{ width: "100%" }}>
                             <ul className="d-flex gap-5 mt-2 fw-bold" style={{ fontSize: "1.1rem" }}>
-                                <li><Link to='/'>Home</Link></li>
-                                <li><Link to='/shop'>Shop</Link></li>
-                                <li><Link to='/pages'>Pages</Link></li>
-                                <li><Link to='/blog'>Blog</Link></li>
-                                <li><Link to='/contacts'>Contacts</Link></li>
+                                <li><Link to='/' className={isActive("/") ? "active-link" : ""}>Home</Link></li>
+                                <li><Link to='/shop' className={isActive("/shop") ? "active-link" : ""}>Shop</Link></li>
+                                <li><Link to='/pages' className={isActive("/pages") ? "active-link" : ""}>Pages</Link></li>
+                                <li><Link to='/blog' className={isActive("/blog") ? "active-link" : ""}>Blog</Link></li>
+                                <li><Link to='/contacts' className={isActive("/contacts") ? "active-link" : ""}>Contacts</Link></li>
                             </ul>
                         </nav>
                     </Col>
                     <Col lg={3} md={3}>
-                        <div className="d-flex justify-content-end" style={{ width: "100%" }}>
-                            <div className="text-align-center pt-4 pb-4 d-flex gap-4 mt-2">
-                                <LuSearch className="w-75 h-75" />
-                                <LuHeart className="w-75 h-75" />
-                                <LuShoppingCart className="w-75 h-75" />
+                        <div className="d-flex justify-content-end text-align-center pt-4 pb-4 d-flex gap-4 mt-2" style={{ width: "100%" }}>
+                                <LuSearch style={{width: '21px', height: '21px'}} className="mt-1" />
+                                <LuHeart style={{width: '21px', height: '21px'}} className="mt-1" />
+                                <LuShoppingCart style={{width: '21px', height: '21px'}} className="mt-1" />
                                 <p className="fw-bold mt-1">$0.00</p>
-                            </div>
                         </div>
                     </Col>
                 </Row>

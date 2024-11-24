@@ -1,0 +1,98 @@
+.usd-hover {
+    display: inline-block;
+    position: relative;
+}
+
+.usd-hover span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+}
+
+.usd-hover ul {
+    background: #c52727;
+    display: inline-block;
+    padding: 2px 0;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+nav ul {
+
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    list-style-type: none;
+    position: relative;
+}
+
+.navbarr nav ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbarr ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #e63737; 
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+.navbarr ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* link :active */
+
+.navbarr ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: color 0.4s ease;
+  }
+  
+  .navbarr ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #e63737;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbarr ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbarr ul li a.active-link {
+    color: #000;
+  }
+  
+  .navbarr ul li a.active-link::after {
+    width: 100%; 
+  }
