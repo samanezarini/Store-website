@@ -1,0 +1,66 @@
+.banner-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-item-pic{
+    float: right;
+}
+
+.banner-item-text{
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 140px;
+}
+
+.banner-item-text h2{
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+
+.banner-item-text a{
+    display: inline-block;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    position: relative;
+}
+
+.banner-item:hover .banner-item-text a:after {
+    width: 40px;
+    background: #e53637;
+}
+
+
+.banner-item a {
+      text-decoration: none;
+      color: black; /* رنگ متن اولیه */
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+    }
+
+    .banner-item a::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: black; /* رنگ خط زیر متن */
+      position: absolute;
+      left: 0;
+      bottom: -5px; /* فاصله خط از متن */
+          transition: color 0.3s ease; /* انیمیشن تغییر رنگ */
+    }
+
+    .banner-item a:hover::after {
+      background: red; /* رنگ خط در حالت هاور */
+      width: 40px;
+    }
