@@ -11,7 +11,7 @@ function NotFound() {
         <Row className="mt-3">
           <Col lg={6} md={7} >
             <div className="h-25">
-              <h5 className="mt-2 text-dark">This page is unavailable. Please try again.</h5>
+              <h5 className="mt-2 text-dark">404 Not Found. Please try again.</h5>
             </div>
           </Col>
           <Col lg={6} md={5} className="d-flex justify-content-end h-25">
@@ -28,7 +28,7 @@ function NotFound() {
         <Row>
           <Col lg={4} md={8}>
             <div className="lh-lg" style={{ marginTop: '40%' }}>
-              <h1 className="display-1"> Oh My...</h1>
+              <h1 className="display-1 font-weight-bold"> Oh My...</h1>
               <p className="text-bold">it looks like this page has been lost</p>
               <button className="btn btn-secondary px-3 rounded-pill">
                 <Link to="/" className="text-decoration-none text-light">Back to Home</Link>
